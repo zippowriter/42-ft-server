@@ -6,28 +6,28 @@
 #    By: hkono <hkono@student.42tokyo.jp>           +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/05/02 17:02:36 by hkono             #+#    #+#              #
-#    Updated: 2021/05/02 17:02:51 by hkono            ###   ########.fr        #
+#    Updated: 2021/11/23 17:17:37 by hkono            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 FROM debian:buster
 
-RUN apt-get update && apt-get -y install	\
-	nginx				\
-	wget				\
-	mariadb-server		\
-	mariadb-client		\
-	php-cgi				\
-	php-common			\
-	php-fpm				\
-	php-pear			\
-	php-mbstring		\
-	php-zip				\
-	php-net-socket		\
-	php-gd				\
-	php-xml-util		\
-	php-gettext			\
-	php-mysql			\
+RUN apt-get update && apt-get -y install \
+	nginx \
+	wget \
+	mariadb-server \
+	mariadb-client \
+	php-cgi \
+	php-common \
+	php-fpm \
+	php-pear \
+	php-mbstring \
+	php-zip \
+	php-net-socket \
+	php-gd \
+	php-xml-util \
+	php-gettext \
+	php-mysql \
 	php-bcmath
 
 ENV AUTO_INDEX on
